@@ -1,3 +1,7 @@
+import cabanaImg from "./assets/cabaña.png";
+import examenImg from "./assets/examen.png";
+import boyerosImg from "./assets/boyeros.png";
+
 export const config = {
     developer: {
         name: "Tobias",
@@ -55,19 +59,30 @@ export const config = {
     projects: [
         {
             id: 1,
-            title: "Drishti",
-            category: "IA / LLM",
-            technologies: "Python, PyTorch, Transformers, FastAPI, React, MongoDB",
-            image: "/images/drishti.png",
-            description: "Chatbot de IA avanzado impulsado por un modelo de lenguaje personalizado. Cuenta con comprensión del lenguaje natural y soporte multilingüe."
+            title: "Landing Page Cabaña",
+            category: "Web Development",
+            technologies: "React, Next.js, Tailwind CSS, Vercel",
+            image: cabanaImg,
+            description: "Landing page moderna y responsiva para el complejo turístico 'Cabaña El Amanecer', optimizada para conversión.",
+            link: "https://elamanecer.com.ar"
         },
         {
             id: 2,
-            title: "VoteChain",
-            category: "Blockchain",
-            technologies: "Solidity, Web3.js, React, Ethereum, IPFS, MetaMask, Node.js",
-            image: "/images/votechain.png",
-            description: "Sistema de votación descentralizado basado en tecnología blockchain que garantiza transparencia y seguridad."
+            title: "Práctica Examen Náutico",
+            category: "Web Application",
+            technologies: "React, Next.js, Tailwind CSS, Vercel",
+            image: examenImg,
+            description: "Aplicación interactiva para la práctica y simulación de exámenes náuticos, facilitando el aprendizaje de los estudiantes.",
+            link: "https://examennauticocba111.vercel.app/"
+        },
+        {
+            id: 3,
+            title: "Sistema Automatización Boyeros",
+            category: "IoT / Full Stack",
+            technologies: "VPS, CI/CD, FastAPI, React, ChakraUI",
+            image: boyerosImg,
+            description: "Sistema integral de monitoreo y automatización para boyeros eléctricos con integración IoT y panel de administración.",
+            link: ""
         }
     ],
     contact: {

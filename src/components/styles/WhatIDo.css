@@ -21,11 +21,13 @@
 }
 
 .what-box h2 {
-  font-size: calc(4vw + 25px);
-  line-height: calc(4vw + 20px);
+  font-size: calc(3.2vw + 20px);
+  line-height: calc(3.2vw + 15px);
   font-weight: 600;
-  margin-right: 10%;
+  margin-right: 55%;
   margin-bottom: 100px;
+  position: relative;
+  left: 110px;
 }
 
 .hat-h2 {
@@ -39,9 +41,10 @@
 .what-box-in {
   flex-direction: column;
   height: 500px;
-  margin-left: 200px;
+  margin-left: 50px;
   position: relative;
   display: flex;
+  justify-content: center;
 }
 
 .what-content {
@@ -56,9 +59,13 @@
 }
 
 .what-noTouch:hover,
-.what-content-active {
-  min-height: 67%;
+.what-content-active,
+.single-card {
+  min-height: 80%;
   padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .what-noTouch:hover~.what-content,

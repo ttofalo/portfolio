@@ -1,16 +1,11 @@
-# My Portfolio Wesbite - Overview 🚀
+# Portfolio de Tobias Tofalo 🚀
 
-This repository contains the open source version of my porfolio website.
-Do check it out!
+Este repositorio contiene el código fuente de mi sitio web personal.
 
-## Instructions 🛠️
+## Tecnologías 🛠️
 
-I have modified the gsap club plugins with the trial plugins, but with the trial plugin you cannot host it🔴. So for Club plugins, Check out here: https://gsap.com/docs/v3/Installation/
+**Techstack** - React, TypeScript, GSAP, ThreeJS, WebGL, HTML, CSS, JavaScript
 
-**Techstack** - React, TypeScript, GSAP, ThreeJS, WebGL, HTML, Css, JavaScript
+## Licencia
 
-![Protfolio-Preview](https://github.com/user-attachments/assets/3c4557e7-6392-4928-b8a9-7b2476ef4edd)
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
+Este proyecto está bajo la [Licencia MIT](LICENSE).

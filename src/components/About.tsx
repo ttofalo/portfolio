@@ -9,6 +9,9 @@ const About = () => {
         <p className="para">
           {config.about.description}
         </p>
+        <p className="para">
+          {config.about.description2}
+        </p>
       </div>
     </div>
   );

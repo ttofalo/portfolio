@@ -376,11 +376,11 @@
   flex-wrap: nowrap;
   text-transform: uppercase;
   letter-spacing: 2px;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .landing-h2-info {
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .landing-h2-info-1 {
@@ -392,7 +392,7 @@
 h2.landing-info-h2 {
   color: #c481ff;
   font-size: 36px;
-  width: 150%;
+  width: auto;
   margin: 0;
   font-family: "Geist", sans-serif;
   font-weight: 600;

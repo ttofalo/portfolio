@@ -1,6 +1,7 @@
 import cabanaImg from "./assets/cabaña.png";
 import examenImg from "./assets/examen.png";
 import boyerosImg from "./assets/boyeros.png";
+import desarrolladoraImg from "./assets/desarrolladora.png";
 
 export const config = {
     developer: {
@@ -77,6 +78,15 @@ export const config = {
         },
         {
             id: 3,
+            title: "Desarrolladora Inmobiliaria",
+            category: "Web Landing Page",
+            technologies: "React.js, Next.js, Vercel, Radix UI, Tailwind CSS",
+            image: desarrolladoraImg,
+            description: "Landing page premium para desarrolladora inmobiliaria, con enfoque en diseño moderno y experiencia de usuario fluida.",
+            link: ""
+        },
+        {
+            id: 4,
             title: "Sistema Automatización Boyeros",
             category: "IoT / Full Stack",
             technologies: "VPS, CI/CD, FastAPI, React, ChakraUI",

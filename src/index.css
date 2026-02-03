@@ -184,6 +184,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1600px) {
+  body {
+    --cWidth: 90%;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .techstack h2 {
     font-size: 40px;

@@ -59,13 +59,13 @@ const SocialIcons = () => {
     <div className="icons-section">
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
-          <a href={config.contact.github} target="_blank" rel="noopener noreferrer">
-            <FaGithub />
+          <a href={config.contact.linkedin} target="_blank" rel="noopener noreferrer">
+            <FaLinkedinIn />
           </a>
         </span>
         <span>
-          <a href={config.contact.linkedin} target="_blank" rel="noopener noreferrer">
-            <FaLinkedinIn />
+          <a href={config.contact.github} target="_blank" rel="noopener noreferrer">
+            <FaGithub />
           </a>
         </span>
       </div>

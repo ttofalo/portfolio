@@ -30,6 +30,15 @@
   left: 110px;
 }
 
+@media only screen and (max-width: 1650px) {
+  .what-box h2 {
+    left: -60px;
+    margin-right: 20%;
+    font-size: 42px;
+    z-index: 20;
+  }
+}
+
 .hat-h2 {
   font-style: italic;
 }

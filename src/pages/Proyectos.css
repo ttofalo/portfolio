@@ -1,11 +1,11 @@
-.myworks-page {
+.proyectos-page {
   min-height: 100vh;
   background-color: var(--backgroundColor);
   padding: 80px 40px;
   box-sizing: border-box;
 }
 
-.myworks-header {
+.proyectos-header {
   text-align: center;
   margin-bottom: 60px;
 }
@@ -27,23 +27,23 @@
   color: #000;
 }
 
-.myworks-header h1 {
+.proyectos-header h1 {
   font-size: 70px;
   font-weight: 500;
   margin-bottom: 15px;
   color: #fff;
 }
 
-.myworks-header h1 span {
+.proyectos-header h1 span {
   color: var(--accentColor);
 }
 
-.myworks-header p {
+.proyectos-header p {
   font-size: 18px;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.myworks-grid {
+.proyectos-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 30px;
@@ -51,7 +51,7 @@
   margin: 0 auto;
 }
 
-.myworks-card {
+.proyectos-card {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 15px;
@@ -60,13 +60,13 @@
   position: relative;
 }
 
-.myworks-card:hover {
+.proyectos-card:hover {
   transform: translateY(-10px);
   border-color: var(--accentColor);
   box-shadow: 0 20px 40px rgba(194, 164, 255, 0.15);
 }
 
-.myworks-card-number {
+.proyectos-card-number {
   position: absolute;
   top: 15px;
   left: 15px;
@@ -79,64 +79,86 @@
   z-index: 1;
 }
 
-.myworks-card-image {
+.proyectos-card-image {
   width: 100%;
   height: 220px;
   overflow: hidden;
 }
 
-.myworks-card-image img {
+.proyectos-card-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.myworks-card:hover .myworks-card-image img {
+.proyectos-card:hover .proyectos-card-image img {
   transform: scale(1.05);
 }
 
-.myworks-card-info {
+.proyectos-card-info {
   padding: 25px;
 }
 
-.myworks-card-info h3 {
+.proyectos-card-info h3 {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 8px;
   color: #fff;
 }
 
-.myworks-card-category {
+.proyectos-card-category {
   font-size: 14px;
   color: var(--accentColor);
   margin-bottom: 12px;
 }
 
-.myworks-card-description {
+.proyectos-card-description {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.75);
   line-height: 1.6;
   margin-bottom: 15px;
 }
 
-.myworks-card-tech {
+.proyectos-card-tech {
   font-size: 13px;
   color: rgba(255, 255, 255, 0.5);
   line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.visit-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accentColor);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.visit-link:hover {
+  gap: 12px;
+  opacity: 0.8;
+}
+
+.visit-icon {
+  font-size: 16px;
 }
 
 /* Responsive */
 @media only screen and (max-width: 768px) {
-  .myworks-page {
+  .proyectos-page {
     padding: 60px 20px;
   }
 
-  .myworks-header h1 {
+  .proyectos-header h1 {
     font-size: 45px;
   }
 
-  .myworks-grid {
+  .proyectos-grid {
     grid-template-columns: 1fr;
   }
 }

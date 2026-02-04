@@ -15,10 +15,17 @@ interface LoadingType {
 
 export const LoadingContext = createContext<LoadingType | null>(null);
 
+import { useLocation } from "react-router-dom";
+
+// ... existing imports
+
 export const LoadingProvider = ({ children }: PropsWithChildren) => {
+  const location = useLocation();
+  const fromProyectos = location.state?.fromProyectos;
+
   const [isLoading, setIsLoading] = useState(() => {
-    // Skip loading on mobile
-    if (window.innerWidth <= 768) return false;
+    // Skip loading on mobile or if coming from Proyectos
+    if (window.innerWidth <= 768 || fromProyectos) return false;
     return true;
   });
   const [loading, setLoading] = useState(0);
@@ -29,8 +36,8 @@ export const LoadingProvider = ({ children }: PropsWithChildren) => {
     setLoading,
   };
   useEffect(() => {
-    // Auto-start animations on mobile since there's no 3D model
-    if (window.innerWidth <= 768) {
+    // Auto-start animations on mobile or if skipped loading since there's no 3D model/loading screen
+    if (window.innerWidth <= 768 || fromProyectos) {
       import("../components/utils/initialFX").then((module) => {
         if (module.initialFX) {
           setTimeout(() => {
@@ -39,9 +46,9 @@ export const LoadingProvider = ({ children }: PropsWithChildren) => {
         }
       });
     }
-  }, []);
+  }, [fromProyectos]);
 
-  useEffect(() => {}, [loading]);
+  useEffect(() => { }, [loading]);
 
   return (
     <LoadingContext.Provider value={value as LoadingType}>

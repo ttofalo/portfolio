@@ -78,6 +78,17 @@ const Work = () => {
                 </div>
                 <h4>Herramientas y características</h4>
                 <p>{project.technologies}</p>
+                {project.link && (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="visit-link"
+                    data-cursor="disable"
+                  >
+                    Visitar <span className="visit-icon">↗</span>
+                  </a>
+                )}
               </div>
               <WorkImage image={project.image} alt={project.title} />
             </div>
@@ -87,7 +98,7 @@ const Work = () => {
             <div className="see-all-works">
               <h3>¿Queres ver mas proyectos?</h3>
               <p>Explora todos mis proyectos y creaciones</p>
-              <Link to="/myworks" className="see-all-btn" data-cursor="disable">
+              <Link to="/proyectos" className="see-all-btn" data-cursor="disable">
                 Ver todos los trabajos →
               </Link>
             </div>

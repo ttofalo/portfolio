@@ -99,6 +99,28 @@
   width: 90%;
 }
 
+.visit-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accentColor);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.visit-link:hover {
+  gap: 12px;
+  opacity: 0.8;
+}
+
+.visit-icon {
+  font-size: 18px;
+}
+
 .work-image {
   display: flex;
   width: 100%;

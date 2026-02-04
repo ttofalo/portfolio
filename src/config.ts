@@ -60,16 +60,16 @@ export const config = {
     projects: [
         {
             id: 1,
-            title: "Landing Page Cabaña",
+            title: "Cabaña El Amanecer",
             category: "Web Development",
             technologies: "React, Next.js, Tailwind CSS, Vercel",
             image: cabanaImg,
             description: "Landing page moderna y responsiva para el complejo turístico 'Cabaña El Amanecer', optimizada para conversión.",
-            link: "https://elamanecer.com.ar"
+            link: "https://www.elamanecer.com.ar/"
         },
         {
             id: 2,
-            title: "Práctica Examen Náutico",
+            title: "Test Examen Náutico",
             category: "Web Application",
             technologies: "React, Next.js, Tailwind CSS, Vercel",
             image: examenImg,
@@ -78,20 +78,20 @@ export const config = {
         },
         {
             id: 3,
-            title: "Desarrolladora Inmobiliaria",
+            title: "Figueroa Desarrollos",
             category: "Web Landing Page",
             technologies: "React.js, Next.js, Vercel, Radix UI, Tailwind CSS",
             image: desarrolladoraImg,
             description: "Landing page premium para desarrolladora inmobiliaria, con enfoque en diseño moderno y experiencia de usuario fluida.",
-            link: ""
+            link: "https://figueroadesarollos.com.ar/"
         },
         {
             id: 4,
             title: "Sistema Automatización Boyeros",
             category: "IoT / Full Stack",
-            technologies: "VPS, CI/CD, FastAPI, React, ChakraUI",
+            technologies: "VPS, CI/CD, FastAPI, Python, React, ChakraUI, Javascript",
             image: boyerosImg,
-            description: "Sistema integral de monitoreo y automatización para boyeros eléctricos con integración IoT y panel de administración.",
+            description: "Plataforma IoT full-stack para el monitoreo y control remoto de boyeros eléctricos. Integra dispositivos físicos con un backend robusto y un panel web en tiempo real, permitiendo gestión centralizada, automatización de estados, registro de eventos y visualización de métricas. Diseñado con foco en escalabilidad, confiabilidad y despliegue productivo sobre VPS con CI/CD.",
             link: ""
         }
     ],

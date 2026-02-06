@@ -1,5 +1,6 @@
 import cabanaImg from "./assets/cabaña.png";
 import examenImg from "./assets/examen.png";
+import invictusImg from "./assets/invictus.png";
 import boyerosImg from "./assets/boyeros.png";
 import desarrolladoraImg from "./assets/desarrolladora.png";
 
@@ -60,6 +61,15 @@ export const config = {
     projects: [
         {
             id: 1,
+            title: "Invictus Gym",
+            category: "Web Application",
+            technologies: "React, CSS, JavaScript",
+            image: invictusImg,
+            description: "Aplicación web moderna para gimnasio, con gestión de membresías, rutinas de entrenamiento y seguimiento de progreso.",
+            link: "https://www.invictusgym.com.ar/"
+        },
+        {
+            id: 2,
             title: "Cabaña El Amanecer",
             category: "Web Development",
             technologies: "React, Next.js, Tailwind CSS, Vercel",
@@ -68,7 +78,7 @@ export const config = {
             link: "https://www.elamanecer.com.ar/"
         },
         {
-            id: 2,
+            id: 3,
             title: "Test Examen Náutico",
             category: "Web Application",
             technologies: "React, Next.js, Tailwind CSS, Vercel",
@@ -77,7 +87,7 @@ export const config = {
             link: "https://examennauticocba111.vercel.app/"
         },
         {
-            id: 3,
+            id: 4,
             title: "Figueroa Desarrollos",
             category: "Web Landing Page",
             technologies: "React.js, Next.js, Vercel, Radix UI, Tailwind CSS",
@@ -86,7 +96,7 @@ export const config = {
             link: "https://figueroadesarollos.com.ar/"
         },
         {
-            id: 4,
+            id: 5,
             title: "Sistema Automatización Boyeros",
             category: "IoT / Full Stack",
             technologies: "VPS, CI/CD, FastAPI, Python, React, ChakraUI, Javascript",

@@ -174,7 +174,7 @@
   }
 
   .header ul {
-    column-gap: 80px;
+    column-gap: 40px;
     font-size: 16px;
   }
 
@@ -196,5 +196,11 @@
 
   .lang-switch span {
     padding: 5px 12px;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  .header ul {
+    column-gap: 80px;
   }
 }

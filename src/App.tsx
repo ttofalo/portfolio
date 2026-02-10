@@ -7,36 +7,39 @@ const CharacterModel = lazy(() => import("./components/Character"));
 const MainContainer = lazy(() => import("./components/MainContainer"));
 const Proyectos = lazy(() => import("./pages/Proyectos"));
 import { LoadingProvider } from "./context/LoadingProvider";
+import { LanguageProvider } from "./context/LanguageContext";
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <LoadingProvider>
-              <Suspense>
-                <MainContainer>
-                  <Suspense>
-                    <CharacterModel />
-                  </Suspense>
-                </MainContainer>
+    <LanguageProvider>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <LoadingProvider>
+                <Suspense>
+                  <MainContainer>
+                    <Suspense>
+                      <CharacterModel />
+                    </Suspense>
+                  </MainContainer>
+                </Suspense>
+              </LoadingProvider>
+            }
+          />
+          <Route
+            path="/proyectos"
+            element={
+              <Suspense fallback={<div></div>}>
+                <Proyectos />
               </Suspense>
-            </LoadingProvider>
-          }
-        />
-        <Route
-          path="/proyectos"
-          element={
-            <Suspense fallback={<div>Cargando...</div>}>
-              <Proyectos />
-            </Suspense>
-          }
-        />
-      </Routes>
-      <Analytics />
-    </BrowserRouter>
+            }
+          />
+        </Routes>
+        <Analytics />
+      </BrowserRouter>
+    </LanguageProvider>
   );
 };
 

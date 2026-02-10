@@ -7,8 +7,11 @@ import { TbNotes } from "react-icons/tb";
 import { useEffect } from "react";
 import HoverLinks from "./HoverLinks";
 import { config } from "../config";
+import { useLang } from "../context/LanguageContext";
 
 const SocialIcons = () => {
+  const { t } = useLang();
+
   useEffect(() => {
     const social = document.getElementById("social") as HTMLElement;
 
@@ -70,7 +73,7 @@ const SocialIcons = () => {
         </span>
       </div>
       <a className="resume-button" href="/CV_Tobias_Tofalo.pdf" download="Tobias_Tofalo_Ivan_CV.pdf">
-        <HoverLinks text="CURRICULUM" />
+        <HoverLinks text={t.cv} />
         <span>
           <TbNotes />
         </span>

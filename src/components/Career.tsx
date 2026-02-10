@@ -1,20 +1,21 @@
 import "./styles/Career.css";
-import { config } from "../config";
+import { useLang } from "../context/LanguageContext";
 
 const Career = () => {
+  const { t } = useLang();
   return (
     <div className="career-section section-container">
       <div className="career-container">
         <h2>
-          Mi carrera <span>y</span>
-          <br /> experiencia
+          {t.career.title1} <span>{t.career.titleAnd}</span>
+          <br /> {t.career.title2}
         </h2>
         <div className="career-info">
           <div className="career-timeline">
             <div className="career-dot"></div>
           </div>
-          {config.experiences.map((exp, index) => (
-            <div key={index} className={`career-info-box ${exp.type === 'education' ? 'career-education' : 'career-work'}`}>
+          {t.career.experiences.map((exp, index) => (
+            <div key={index} className={`career-info-box ${index === 0 || index === 3 ? 'career-education' : 'career-work'}`}>
               <div className="career-info-in">
                 <div className="career-role">
                   <h4>{exp.position}</h4>

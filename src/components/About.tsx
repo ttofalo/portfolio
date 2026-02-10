@@ -1,17 +1,18 @@
 import "./styles/About.css";
-import { config } from "../config";
+import { useLang } from "../context/LanguageContext";
 
 const About = () => {
+  const { lang, t } = useLang();
   return (
     <div className="about-section" id="about">
-      <div className="about-me">
-        <h3 className="title">"{config.about.title}"</h3>
+      <div className="about-me" key={lang}>
+        <h3 className="title">"{t.about.title}"</h3>
         <div className="quote-content">
           <p className="para quote">
-            {config.about.description}
+            {t.about.description}
           </p>
           <p className="para">
-            {config.about.description2}
+            {t.about.description2}
           </p>
         </div>
       </div>

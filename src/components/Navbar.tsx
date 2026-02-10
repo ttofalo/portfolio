@@ -5,11 +5,14 @@ import { gsap } from "gsap";
 import Lenis from "lenis";
 import "./styles/Navbar.css";
 import { config } from "../config";
+import { useLang } from "../context/LanguageContext";
 
 gsap.registerPlugin(ScrollTrigger);
 export let lenis: Lenis | null = null;
 
 const Navbar = () => {
+  const { lang, toggleLang, t } = useLang();
+
   useEffect(() => {
     // Initialize Lenis smooth scroll
     lenis = new Lenis({
@@ -75,19 +78,30 @@ const Navbar = () => {
           {config.contact.email}
         </a>
         <ul>
+          <li className="lang-switch-li">
+            <button
+              className="lang-switch"
+              onClick={toggleLang}
+              data-cursor="disable"
+              aria-label="Switch language"
+            >
+              <span className={lang === "es" ? "lang-active" : ""}>ES</span>
+              <span className={lang === "en" ? "lang-active" : ""}>EN</span>
+            </button>
+          </li>
           <li>
             <a data-href="#about" href="#about">
-              <HoverLinks text="SOBRE MÍ" />
+              <HoverLinks text={t.nav.about} />
             </a>
           </li>
           <li>
             <a data-href="#work" href="#work">
-              <HoverLinks text="PROYECTOS" />
+              <HoverLinks text={t.nav.projects} />
             </a>
           </li>
           <li>
             <a data-href="#contact" href="#contact">
-              <HoverLinks text="CONTACTO" />
+              <HoverLinks text={t.nav.contact} />
             </a>
           </li>
         </ul>

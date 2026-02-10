@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import { config } from "../config";
 import "./Proyectos.css";
+import { useLang } from "../context/LanguageContext";
 
 const Proyectos = () => {
+  const { t } = useLang();
   return (
     <div className="proyectos-page">
       <div className="proyectos-header">
@@ -12,12 +14,12 @@ const Proyectos = () => {
           className="back-button"
           data-cursor="disable"
         >
-          ← Volver al Inicio
+          {t.projectsPage.back}
         </Link>
         <h1>
-          Todos mis <span>proyectos</span>
+          {t.projectsPage.title} <span>{t.projectsPage.titleHighlight}</span>
         </h1>
-        <p>Una colección de todos mis proyectos y creaciones</p>
+        <p>{t.projectsPage.subtitle}</p>
       </div>
 
       <div className="proyectos-grid">
@@ -30,7 +32,9 @@ const Proyectos = () => {
             <div className="proyectos-card-info">
               <h3>{project.title}</h3>
               <p className="proyectos-card-category">{project.category}</p>
-              <p className="proyectos-card-description">{project.description}</p>
+              <p className="proyectos-card-description">
+                {t.work.projects[index]?.description ?? project.description}
+              </p>
               <p className="proyectos-card-tech">{project.technologies}</p>
               {project.link && (
                 <a
@@ -40,7 +44,7 @@ const Proyectos = () => {
                   className="visit-link"
                   data-cursor="disable"
                 >
-                  Visitar <span className="visit-icon">↗</span>
+                  {t.projectsPage.visit} <span className="visit-icon">↗</span>
                 </a>
               )}
             </div>

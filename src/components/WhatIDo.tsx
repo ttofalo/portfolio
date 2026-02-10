@@ -2,8 +2,10 @@ import { useEffect, useRef } from "react";
 import "./styles/WhatIDo.css";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { config } from "../config";
+import { useLang } from "../context/LanguageContext";
 
 const WhatIDo = () => {
+  const { lang, t } = useLang();
   const containerRef = useRef<(HTMLDivElement | null)[]>([]);
   const setRef = (el: HTMLDivElement | null, index: number) => {
     containerRef.current[index] = el;
@@ -28,10 +30,10 @@ const WhatIDo = () => {
   return (
     <div className="whatIDO">
       <div className="what-box">
-        <h2 className="title">
-          QUÉ<span className="hat-h2"></span>
+        <h2 className="title" key={lang}>
+          {t.whatIDo.title1}<span className="hat-h2"></span>
           <div>
-            &nbsp;H<span className="do-h2">AGO</span>
+            &nbsp;{t.whatIDo.title2}<span className="do-h2">{t.whatIDo.title3}</span>
           </div>
         </h2>
       </div>
@@ -88,12 +90,12 @@ const WhatIDo = () => {
             <div className="what-corner"></div>
 
             <div className="what-content-in">
-              <h3>{config.skills.frontend.title}</h3>
-              <h4>{config.skills.frontend.description}</h4>
+              <h3>{t.whatIDo.skillTitle}</h3>
+              <h4>{t.whatIDo.skillDescription}</h4>
               <p>
-                {config.skills.frontend.details}
+                {t.whatIDo.skillDetails}
               </p>
-              <h5>Herramientas y habilidades</h5>
+              <h5>{t.whatIDo.toolsLabel}</h5>
               <div className="what-content-flex">
                 {config.skills.frontend.tools.map((tool, index) => (
                   <div key={index} className="what-tags">{tool}</div>

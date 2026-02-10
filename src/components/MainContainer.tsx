@@ -11,12 +11,14 @@ import Work from "./Work";
 import TechStackNew from "./TechStackNew";
 import CallToAction from "./CallToAction";
 import setSplitText from "./utils/splitText";
+import { useLang } from "../context/LanguageContext";
 
 import { useLocation } from "react-router-dom";
 
 // ...
 
 const MainContainer = ({ children }: PropsWithChildren) => {
+  const { lang } = useLang();
   const [isDesktopView, setIsDesktopView] = useState<boolean>(
     window.innerWidth > 1024
   );
@@ -45,6 +47,12 @@ const MainContainer = ({ children }: PropsWithChildren) => {
       window.removeEventListener("resize", resizeHandler);
     };
   }, [isDesktopView]);
+
+  // Re-run text split animations when language changes
+  useEffect(() => {
+    const timer = setTimeout(() => setSplitText(), 50);
+    return () => clearTimeout(timer);
+  }, [lang]);
 
   return (
     <div className="container-main">

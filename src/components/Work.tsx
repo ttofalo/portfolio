@@ -5,10 +5,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 import { config } from "../config";
 import { Link } from "react-router-dom";
+import { useLang } from "../context/LanguageContext";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Work = () => {
+  const { t } = useLang();
+
   useEffect(() => {
     // Disable pinning on mobile to allow scrolling
     if (window.innerWidth <= 768) return;
@@ -62,7 +65,7 @@ const Work = () => {
     <div className="work-section" id="work">
       <div className="work-container section-container">
         <h2>
-          Mis <span>Proyectos</span>
+          {t.work.title} <span>{t.work.titleHighlight}</span>
         </h2>
         <div className="work-flex">
           {config.projects.slice(0, 5).map((project, index) => (
@@ -76,7 +79,7 @@ const Work = () => {
                     <p>{project.category}</p>
                   </div>
                 </div>
-                <h4>Herramientas y características</h4>
+                <h4>{t.work.toolsLabel}</h4>
                 <p>{project.technologies}</p>
                 {project.link && (
                   <a
@@ -86,7 +89,7 @@ const Work = () => {
                     className="visit-link"
                     data-cursor="disable"
                   >
-                    Visitar <span className="visit-icon">↗</span>
+                    {t.work.visit} <span className="visit-icon">↗</span>
                   </a>
                 )}
               </div>
@@ -96,10 +99,10 @@ const Work = () => {
           {/* See All Works Button */}
           <div className="work-box work-box-cta">
             <div className="see-all-works">
-              <h3>¿Queres ver mas proyectos?</h3>
-              <p>Explora todos mis proyectos y creaciones</p>
+              <h3>{t.work.ctaTitle}</h3>
+              <p>{t.work.ctaDescription}</p>
               <Link to="/proyectos" className="see-all-btn" data-cursor="disable">
-                Ver todos los trabajos →
+                {t.work.ctaButton}
               </Link>
             </div>
           </div>

@@ -4,10 +4,13 @@ import { config } from "../config";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
+import { useLang } from "../context/LanguageContext";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
+  const { t } = useLang();
+
   useEffect(() => {
     const contactTimeline = gsap.timeline({
       scrollTrigger: {
@@ -62,19 +65,19 @@ const Contact = () => {
         <h3>{config.developer.fullName}</h3>
         <div className="contact-flex">
           <div className="contact-box">
-            <h4>Correo</h4>
+            <h4>{t.contact.email}</h4>
             <p>
               <a href={`mailto:${config.contact.email}`} data-cursor="disable">
                 {config.contact.email}
               </a>
             </p>
-            <h4>Ubicación</h4>
+            <h4>{t.contact.location}</h4>
             <p>
               <span>{config.social.location}</span>
             </p>
           </div>
           <div className="contact-box">
-            <h4>Redes</h4>
+            <h4>{t.contact.social}</h4>
             <a
               href={config.contact.github}
               target="_blank"
@@ -96,7 +99,7 @@ const Contact = () => {
           </div>
           <div className="contact-box">
             <h2>
-              Diseñado y Desarrollado <br /> por <span>{config.developer.fullName}</span>
+              {t.contact.footer} <br /> {t.contact.footerBy} <span>{config.developer.fullName}</span>
             </h2>
             <h5>
               <MdCopyright /> {new Date().getFullYear()}

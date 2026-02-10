@@ -66,11 +66,13 @@ const Contact = () => {
         <div className="contact-flex">
           <div className="contact-box">
             <h4>{t.contact.email}</h4>
-            <p>
-              <a href={`mailto:${config.contact.email}`} data-cursor="disable">
-                {config.contact.email}
-              </a>
-            </p>
+            <button
+              onClick={() => window.open(`mailto:${config.contact.email}`, "_self")}
+              data-cursor="disable"
+              className="contact-social contact-email-btn"
+            >
+              {config.contact.email} <MdArrowOutward />
+            </button>
             <h4>{t.contact.location}</h4>
             <p>
               <span>{config.social.location}</span>

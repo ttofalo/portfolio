@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import HoverLinks from "./HoverLinks";
 import { gsap } from "gsap";
@@ -12,6 +12,17 @@ export let lenis: Lenis | null = null;
 
 const Navbar = () => {
   const { lang, toggleLang, t } = useLang();
+  const [copied, setCopied] = useState(false);
+
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText(config.contact.email);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (err) {
+      console.error("Failed to copy:", err);
+    }
+  };
 
   useEffect(() => {
     // Initialize Lenis smooth scroll
@@ -70,15 +81,15 @@ const Navbar = () => {
   return (
     <>
       <div className="header">
-        <a
-          href={`mailto:${config.contact.email}`}
+        <button
+          onClick={copyToClipboard}
           className="navbar-connect"
           data-cursor="disable"
-          target="_blank"
-          rel="noopener noreferrer"
+          aria-label="Copy email to clipboard"
         >
           {config.contact.email}
-        </a>
+          {copied && <span className="copied-message">{t.emailCopied}</span>}
+        </button>
         <ul>
           <li className="lang-switch-li">
             <button

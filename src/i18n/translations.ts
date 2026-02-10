@@ -4,6 +4,7 @@ const es = {
   loading: "Cargando...",
   loadingScreen: "Cargando",
   welcome: "Bienvenido",
+  emailCopied: "¡Copiado!",
   nav: {
     about: "SOBRE MÍ",
     projects: "PROYECTOS",
@@ -136,6 +137,7 @@ const en: typeof es = {
   loading: "Loading...",
   loadingScreen: "Loading",
   welcome: "Welcome",
+  emailCopied: "Copied!",
   nav: {
     about: "ABOUT ME",
     projects: "PROJECTS",

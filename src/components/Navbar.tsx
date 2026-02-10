@@ -74,6 +74,8 @@ const Navbar = () => {
           href={`mailto:${config.contact.email}`}
           className="navbar-connect"
           data-cursor="disable"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           {config.contact.email}
         </a>

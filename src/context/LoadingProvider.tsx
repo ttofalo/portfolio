@@ -42,7 +42,7 @@ export const LoadingProvider = ({ children }: PropsWithChildren) => {
         if (module.initialFX) {
           setTimeout(() => {
             module.initialFX();
-          }, 100);
+          }, 300);
         }
       });
     }

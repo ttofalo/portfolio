@@ -6,6 +6,18 @@ export function initialFX() {
   document.body.style.overflowY = "auto";
   if (lenis) {
     lenis.start();
+  } else {
+    // Lenis might not be initialized yet (e.g. navigating from /proyectos to home)
+    // Retry until it's available
+    let retries = 0;
+    const interval = setInterval(() => {
+      if (lenis) {
+        lenis.start();
+        clearInterval(interval);
+      } else if (++retries > 20) {
+        clearInterval(interval);
+      }
+    }, 50);
   }
   document.getElementsByTagName("main")[0].classList.add("main-active");
   gsap.to("body", {

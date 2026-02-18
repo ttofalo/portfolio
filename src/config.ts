@@ -3,6 +3,7 @@ import examenImg from "./assets/examen.png";
 import invictusImg from "./assets/invictus.png";
 import boyerosImg from "./assets/boyeros.png";
 import desarrolladoraImg from "./assets/desarrolladora.png";
+import bevalueImg from "./assets/bevalue_landing.png";
 
 export const config = {
     developer: {
@@ -79,12 +80,12 @@ export const config = {
         },
         {
             id: 3,
-            title: "Test Examen Náutico",
-            category: "Web Application",
-            technologies: "React, Next.js, Tailwind CSS, Vercel",
-            image: examenImg,
-            description: "Aplicación interactiva para la práctica y simulación de exámenes náuticos, facilitando el aprendizaje de los estudiantes.",
-            link: "https://examennauticocba111.vercel.app/"
+            title: "Ecosistema Be Value",
+            category: "Startup / Full Stack & Mobile",
+            technologies: "React, Next.js, Tailwind CSS, Vercel, MongoDB, Java, API Mercado Pago",
+            image: bevalueImg,
+            description: "Ecosistema de software completo para startup de triple impacto que recompensa el reciclaje con descuentos en comercios. Proyecto de tesis. Integra landing page, panel administrativo, panel de negocio adherido y app Android nativa en Java publicada en PlayStore, todo conectado a una misma base de datos MongoDB.",
+            link: "https://bevalue.com.ar"
         },
         {
             id: 4,
@@ -99,10 +100,19 @@ export const config = {
             id: 5,
             title: "Sistema Automatización Boyeros",
             category: "IoT / Full Stack",
-            technologies: "VPS, CI/CD, FastAPI, Python, React, ChakraUI, Javascript",
+            technologies: "ESP-32, WebSocket, FastAPI, Python, React, ChakraUI, VPS",
             image: boyerosImg,
-            description: "Plataforma IoT full-stack para el monitoreo y control remoto de boyeros eléctricos. Integra dispositivos físicos con un backend robusto y un panel web en tiempo real, permitiendo gestión centralizada, automatización de estados, registro de eventos y visualización de métricas. Diseñado con foco en escalabilidad, confiabilidad y despliegue productivo sobre VPS con CI/CD.",
+            description: "Sistema IoT basado en un ESP-32 que se conecta vía WiFi a un backend desplegado en un VPS mediante WebSocket. Según el estado recibido, el microcontrolador activa o desactiva un relé que controla la corriente del boyero eléctrico. Para el usuario, todo se gestiona desde un frontend simple e intuitivo donde puede encender o apagar el boyero con un solo clic.",
             link: ""
+        },
+        {
+            id: 6,
+            title: "Test Examen Náutico",
+            category: "Web Application",
+            technologies: "React, Next.js, Tailwind CSS, Vercel",
+            image: examenImg,
+            description: "Aplicación interactiva para la práctica y simulación de exámenes náuticos, facilitando el aprendizaje de los estudiantes.",
+            link: "https://examennauticocba111.vercel.app/"
         }
     ],
     contact: {

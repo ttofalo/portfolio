@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { config } from "../config";
 import "./Proyectos.css";
@@ -5,6 +6,11 @@ import { useLang } from "../context/LanguageContext";
 
 const Proyectos = () => {
   const { t } = useLang();
+
+  // Unlock scroll when entering this page directly (body has overflow:hidden by default)
+  useEffect(() => {
+    document.body.style.overflowY = "auto";
+  }, []);
   return (
     <div className="proyectos-page">
       <div className="proyectos-header">

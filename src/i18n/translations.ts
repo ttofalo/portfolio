@@ -93,7 +93,7 @@ const es = {
       },
       {
         description:
-          "Aplicación interactiva para la práctica y simulación de exámenes náuticos, facilitando el aprendizaje de los estudiantes.",
+          "Ecosistema de software completo para startup de triple impacto que recompensa el reciclaje con descuentos en comercios. Proyecto de tesis. Integra landing page, panel administrativo, panel de negocio adherido y app Android nativa en Java publicada en PlayStore, todo conectado a una misma base de datos MongoDB.",
       },
       {
         description:
@@ -101,7 +101,11 @@ const es = {
       },
       {
         description:
-          "Plataforma IoT full-stack para el monitoreo y control remoto de boyeros eléctricos. Integra dispositivos físicos con un backend robusto y un panel web en tiempo real, permitiendo gestión centralizada, automatización de estados, registro de eventos y visualización de métricas. Diseñado con foco en escalabilidad, confiabilidad y despliegue productivo sobre VPS con CI/CD.",
+          "Sistema IoT basado en un ESP-32 que se conecta vía WiFi a un backend desplegado en un VPS mediante WebSocket. Según el estado recibido, el microcontrolador activa o desactiva un relé que controla la corriente del boyero eléctrico. Para el usuario, todo se gestiona desde un frontend simple e intuitivo donde puede encender o apagar el boyero con un solo clic.",
+      },
+      {
+        description:
+          "Aplicación interactiva para la práctica y simulación de exámenes náuticos, facilitando el aprendizaje de los estudiantes.",
       },
     ],
   },
@@ -226,7 +230,7 @@ const en: typeof es = {
       },
       {
         description:
-          "Interactive application for practicing and simulating nautical exams, facilitating student learning.",
+          "Complete software ecosystem for a triple-impact startup that rewards recycling with discounts at partner stores. Thesis project. Integrates a landing page, admin panel, partner business panel, and a native Android app built in Java published on PlayStore, all connected to a single MongoDB database.",
       },
       {
         description:
@@ -234,7 +238,11 @@ const en: typeof es = {
       },
       {
         description:
-          "Full-stack IoT platform for remote monitoring and control of electric fence chargers. Integrates physical devices with a robust backend and a real-time web dashboard, enabling centralized management, state automation, event logging, and metrics visualization. Designed with a focus on scalability, reliability, and production deployment on VPS with CI/CD.",
+          "IoT system built around an ESP-32 that connects via WiFi to a backend deployed on a VPS through WebSocket. Based on the received state, the microcontroller toggles a relay that controls the electric fence charger's power. For the end user, everything is managed from a simple and intuitive frontend where they can turn the charger on or off with a single click.",
+      },
+      {
+        description:
+          "Interactive application for practicing and simulating nautical exams, facilitating student learning.",
       },
     ],
   },

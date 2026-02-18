@@ -12,13 +12,13 @@ const es = {
   },
   landing: {
     greeting: "Soy",
-    role1: "FrontEnd",
-    role2: "Software Developer",
+    role1: "Software",
+    role2: "Developer",
   },
   about: {
     title: "Sobre Mí",
     description:
-      "Egresado en Desarrollo de Software, con experiencia en soluciones web y mobile usando React, JavaScript, TypeScript y Java. Actualmente trabajo como Frontend Developer, participando en el desarrollo de sistemas internos, integración de APIs REST y construcción de interfaces mantenibles y de calidad.",
+      "Egresado en Desarrollo de Software, con experiencia en soluciones web y mobile usando React, JavaScript, TypeScript y Java. Actualmente trabajo como Developer, participando en el desarrollo de sistemas internos, integración de APIs REST y construcción de interfaces mantenibles y de calidad.",
     description2:
       "Tengo experiencia en entornos corporativos y trabajo en equipo bajo metodología Scrum, con foco en la calidad del software y la experiencia de usuario. Actualmente curso la Licenciatura en Ciencia de Datos, aportando una mirada analítica orientada a soluciones basadas en datos.",
   },
@@ -27,7 +27,7 @@ const es = {
     title2: "H",
     title3: "AGO",
     toolsLabel: "Herramientas y habilidades",
-    skillTitle: "FRONTEND DEV",
+    skillTitle: "SOFTWARE DEVELOPMENT",
     skillDescription: "Desarrollo de interfaces modernas y escalables",
     skillDetails:
       "Especializado en la creación de aplicaciones web de alto rendimiento, interfaces de usuario intuitivas y sistemas modulares. Enfoque en accesibilidad, rendimiento y buenas prácticas de desarrollo.",
@@ -145,13 +145,13 @@ const en: typeof es = {
   },
   landing: {
     greeting: "I'm",
-    role1: "FrontEnd",
-    role2: "Software Developer",
+    role1: "Software",
+    role2: "Developer",
   },
   about: {
     title: "About Me",
     description:
-      "Software Development graduate with experience in web and mobile solutions using React, JavaScript, TypeScript, and Java. Currently working as a Frontend Developer, building internal systems, integrating REST APIs, and creating maintainable, high-quality interfaces.",
+      "Software Development graduate with experience in web and mobile solutions using React, JavaScript, TypeScript, and Java. Currently working as a Developer, building internal systems, integrating REST APIs, and creating maintainable, high-quality interfaces.",
     description2:
       "Experienced in corporate environments and teamwork following Scrum methodology, with a focus on software quality and user experience. Currently pursuing a degree in Data Science, bringing an analytical perspective oriented towards data-driven solutions.",
   },
@@ -160,7 +160,7 @@ const en: typeof es = {
     title2: "I",
     title3: "DO",
     toolsLabel: "Tools and skills",
-    skillTitle: "FRONTEND DEV",
+    skillTitle: "SOFTWARE DEV",
     skillDescription: "Building modern and scalable interfaces",
     skillDetails:
       "Specialized in creating high-performance web applications, intuitive user interfaces, and modular systems. Focused on accessibility, performance, and development best practices.",

@@ -18,7 +18,7 @@ export const config = {
     },
     about: {
         title: "Sobre Mí",
-        description: "Egresado en Desarrollo de Software, con experiencia en soluciones web y mobile usando React, JavaScript, TypeScript y Java. Actualmente trabajo como Frontend Developer, participando en el desarrollo de sistemas internos, integración de APIs REST y construcción de interfaces mantenibles y de calidad.",
+        description: "Egresado en Desarrollo de Software, con experiencia en soluciones web y mobile usando React, JavaScript, TypeScript y Java. Actualmente trabajo como Developer, participando en el desarrollo de sistemas internos, integración de APIs REST y construcción de interfaces mantenibles y de calidad.",
         description2: "Tengo experiencia en entornos corporativos y trabajo en equipo bajo metodología Scrum, con foco en la calidad del software y la experiencia de usuario. Actualmente curso la Licenciatura en Ciencia de Datos, aportando una mirada analítica orientada a soluciones basadas en datos."
     },
     experiences: [
@@ -115,10 +115,10 @@ export const config = {
     },
     skills: {
         frontend: {
-            title: "FRONTEND DEV",
+            title: "SOFTWARE DEVELOPMENT",
             description: "Desarrollo de interfaces modernas y escalables",
             details: "Especializado en la creación de aplicaciones web de alto rendimiento, interfaces de usuario intuitivas y sistemas modulares. Enfoque en accesibilidad, rendimiento y buenas prácticas de desarrollo.",
-            tools: ["React", "Next.js", "JavaScript", "TypeScript", "TailwindCSS", "API REST", "Docker", "Git", "Postman", "Azure Devops"]
+            tools: ["React", "Next.js", "JavaScript", "TypeScript", "Java", "TailwindCSS", "API REST", "Docker", "Git", "Postman", "Azure Devops"]
         }
     }
 };

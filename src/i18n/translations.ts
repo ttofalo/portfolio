@@ -164,7 +164,7 @@ const en: typeof es = {
     title2: "I",
     title3: "DO",
     toolsLabel: "Tools and skills",
-    skillTitle: "SOFTWARE DEV",
+    skillTitle: "SOFTWARE DEVELOPMENT",
     skillDescription: "Building modern and scalable interfaces",
     skillDetails:
       "Specialized in creating high-performance web applications, intuitive user interfaces, and modular systems. Focused on accessibility, performance, and development best practices.",

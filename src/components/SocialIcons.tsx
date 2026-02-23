@@ -9,8 +9,14 @@ import HoverLinks from "./HoverLinks";
 import { config } from "../config";
 import { useLang } from "../context/LanguageContext";
 
+const cvFiles: Record<string, { href: string; download: string }> = {
+  es: { href: "/Tofalo,%20Tobias%20Ivan%20ES.pdf", download: "Tofalo_Tobias_Ivan_ES.pdf" },
+  en: { href: "/Tofalo,%20Tobias%20Ivan%20EN.pdf", download: "Tofalo_Tobias_Ivan_EN.pdf" },
+};
+
 const SocialIcons = () => {
-  const { t } = useLang();
+  const { t, lang } = useLang();
+  const cv = cvFiles[lang];
 
   useEffect(() => {
     const social = document.getElementById("social") as HTMLElement;
@@ -72,7 +78,7 @@ const SocialIcons = () => {
           </a>
         </span>
       </div>
-      <a className="resume-button" href="/CV_Tobias_Tofalo.pdf" download="Tobias_Tofalo_Ivan_CV.pdf">
+      <a className="resume-button" href={cv.href} download={cv.download}>
         <HoverLinks text={t.cv} />
         <span>
           <TbNotes />

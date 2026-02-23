@@ -85,9 +85,10 @@
 }
 
 .what-content h3 {
-  font-size: 35px;
+  font-size: 22px;
   letter-spacing: 1px;
   margin: 0;
+  white-space: nowrap;
 }
 
 .what-content p {
@@ -302,7 +303,7 @@
   }
 
   .what-content h3 {
-    font-size: 28px;
+    font-size: 20px;
   }
 
   .what-content {
@@ -446,7 +447,7 @@
   }
 
   .what-content h3 {
-    font-size: 25px;
+    font-size: 18px;
   }
 }
 

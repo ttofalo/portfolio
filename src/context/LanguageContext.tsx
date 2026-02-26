@@ -14,7 +14,8 @@ function getInitialLang(): Lang {
     const saved = localStorage.getItem("lang");
     if (saved === "en" || saved === "es") return saved;
   } catch {}
-  return "es";
+  const browserLang = navigator.language || (navigator as Navigator & { userLanguage?: string }).userLanguage || "es";
+  return browserLang.toLowerCase().startsWith("es") ? "es" : "en";
 }
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {

@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
 import "./App.css";
 
+window.history.scrollRestoration = "manual";
+
 const CharacterModel = lazy(() => import("./components/Character"));
 const MainContainer = lazy(() => import("./components/MainContainer"));
 const Proyectos = lazy(() => import("./pages/Proyectos"));

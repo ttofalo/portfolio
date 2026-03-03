@@ -81,17 +81,13 @@ const Work = () => {
                 </div>
                 <h4>{t.work.toolsLabel}</h4>
                 <p>{project.technologies}</p>
-                {project.link && (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="visit-link"
-                    data-cursor="disable"
-                  >
-                    {t.work.visit} <span className="visit-icon">↗</span>
-                  </a>
-                )}
+                <Link
+                  to="/proyectos"
+                  className="visit-link"
+                  data-cursor="disable"
+                >
+                  {t.work.seeMore}
+                </Link>
               </div>
               <WorkImage image={project.image} alt={project.title} />
             </div>

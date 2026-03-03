@@ -7,9 +7,9 @@ import { useLang } from "../context/LanguageContext";
 const Proyectos = () => {
   const { t } = useLang();
 
-  // Unlock scroll when entering this page directly (body has overflow:hidden by default)
   useEffect(() => {
     document.body.style.overflowY = "auto";
+    window.scrollTo(0, 0);
   }, []);
   return (
     <div className="proyectos-page">

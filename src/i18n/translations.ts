@@ -12,7 +12,7 @@ const es = {
   },
   landing: {
     greeting: "Soy",
-    role1: "Software",
+    role1: "FullStack",
     role2: "Developer",
   },
   about: {
@@ -150,7 +150,7 @@ const en: typeof es = {
   },
   landing: {
     greeting: "I'm",
-    role1: "Software",
+    role1: "FullStack",
     role2: "Developer",
   },
   about: {

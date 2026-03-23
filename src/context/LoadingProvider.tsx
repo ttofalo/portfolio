@@ -6,6 +6,7 @@ import {
   useState,
 } from "react";
 import Loading from "../components/Loading";
+import { useLocation } from "react-router-dom";
 
 interface LoadingType {
   isLoading: boolean;
@@ -15,38 +16,29 @@ interface LoadingType {
 
 export const LoadingContext = createContext<LoadingType | null>(null);
 
-import { useLocation } from "react-router-dom";
-
-// ... existing imports
-
 export const LoadingProvider = ({ children }: PropsWithChildren) => {
   const location = useLocation();
   const fromProyectos = location.state?.fromProyectos;
 
   const [isLoading, setIsLoading] = useState(() => {
-    // Skip loading on mobile or if coming from Proyectos
-    if (window.innerWidth <= 768 || fromProyectos) return false;
+    // Solo salteamos el loader en mobile (no tiene modelo 3D)
+    if (window.innerWidth <= 768) return false;
     return true;
   });
   const [loading, setLoading] = useState(0);
 
-  const value = {
-    isLoading,
-    setIsLoading,
-    setLoading,
-  };
+  const value = { isLoading, setIsLoading, setLoading };
+
   useEffect(() => {
-    // Auto-start animations on mobile or if skipped loading since there's no 3D model/loading screen
-    if (window.innerWidth <= 768 || fromProyectos) {
+    // En mobile no hay loader, arrancamos las animaciones directamente
+    if (window.innerWidth <= 768) {
       import("../components/utils/initialFX").then((module) => {
         if (module.initialFX) {
-          setTimeout(() => {
-            module.initialFX();
-          }, 300);
+          setTimeout(() => module.initialFX(), 300);
         }
       });
     }
-  }, [fromProyectos]);
+  }, []);
 
   useEffect(() => { }, [loading]);
 

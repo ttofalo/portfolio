@@ -12,28 +12,26 @@ import TechStackNew from "./TechStackNew";
 import CallToAction from "./CallToAction";
 import setSplitText from "./utils/splitText";
 import { useLang } from "../context/LanguageContext";
-
 import { useLocation } from "react-router-dom";
-
-// ...
 
 const MainContainer = ({ children }: PropsWithChildren) => {
   const { lang } = useLang();
+  const location = useLocation();
   const [isDesktopView, setIsDesktopView] = useState<boolean>(
     window.innerWidth > 1024
   );
   const [isMobile] = useState<boolean>(window.innerWidth <= 768);
-  const location = useLocation();
 
   useEffect(() => {
-    if (location.state?.fromProyectos) {
-      setTimeout(() => {
-        const workSection = document.querySelector("#work");
-        if (workSection) {
-          workSection.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 500); // Small delay to ensure rendering
-    }
+    if (!location.state?.fromProyectos) return;
+    // Wait for GSAP ScrollTrigger to finish setting up before scrolling
+    const timer = setTimeout(() => {
+      const workSection = document.querySelector("#work") as HTMLElement;
+      if (workSection) {
+        window.scrollTo(0, workSection.offsetTop);
+      }
+    }, 500);
+    return () => clearTimeout(timer);
   }, [location]);
 
   useEffect(() => {

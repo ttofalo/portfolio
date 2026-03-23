@@ -41,11 +41,12 @@ const Navbar = () => {
     lenis.stop();
 
     // Handle smooth scroll animation frame
+    let rafId: number;
     function raf(time: number) {
       lenis?.raf(time);
-      requestAnimationFrame(raf);
+      rafId = requestAnimationFrame(raf);
     }
-    requestAnimationFrame(raf);
+    rafId = requestAnimationFrame(raf);
 
     // Handle navigation links
     let links = document.querySelectorAll(".header ul a");
@@ -75,7 +76,9 @@ const Navbar = () => {
     });
 
     return () => {
+      cancelAnimationFrame(rafId);
       lenis?.destroy();
+      lenis = null;
     };
   }, []);
   return (

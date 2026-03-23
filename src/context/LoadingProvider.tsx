@@ -6,7 +6,6 @@ import {
   useState,
 } from "react";
 import Loading from "../components/Loading";
-import { useLocation } from "react-router-dom";
 
 interface LoadingType {
   isLoading: boolean;
@@ -18,8 +17,6 @@ export const LoadingContext = createContext<LoadingType | null>(null);
 
 export const LoadingProvider = ({ children }: PropsWithChildren) => {
   const location = useLocation();
-  const fromProyectos = location.state?.fromProyectos;
-
   const [isLoading, setIsLoading] = useState(() => {
     // Solo salteamos el loader en mobile (no tiene modelo 3D)
     if (window.innerWidth <= 768) return false;

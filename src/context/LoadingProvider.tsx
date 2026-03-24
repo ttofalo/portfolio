@@ -16,7 +16,6 @@ interface LoadingType {
 export const LoadingContext = createContext<LoadingType | null>(null);
 
 export const LoadingProvider = ({ children }: PropsWithChildren) => {
-  const location = useLocation();
   const [isLoading, setIsLoading] = useState(() => {
     // Solo salteamos el loader en mobile (no tiene modelo 3D)
     if (window.innerWidth <= 768) return false;

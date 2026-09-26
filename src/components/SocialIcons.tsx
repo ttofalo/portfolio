@@ -3,20 +3,18 @@ import {
   FaLinkedinIn,
 } from "react-icons/fa6";
 import "./styles/SocialIcons.css";
-import { TbNotes } from "react-icons/tb";
+// import { TbNotes } from "react-icons/tb";
 import { useEffect } from "react";
-import HoverLinks from "./HoverLinks";
+// import HoverLinks from "./HoverLinks";
 import { config } from "../config";
-import { useLang } from "../context/LanguageContext";
+// import { useLang } from "../context/LanguageContext";
 
-const cvFiles: Record<string, { href: string; download: string }> = {
-  es: { href: "/Tofalo,%20Tobias%20Ivan%20ES.pdf", download: "Tofalo_Tobias_Ivan_ES.pdf" },
-  en: { href: "/Tofalo,%20Tobias%20Ivan%20EN.pdf", download: "Tofalo_Tobias_Ivan_EN.pdf" },
-};
+// const cvFiles: Record<string, { href: string; download: string }> = {
+//   es: { href: "/Tofalo,%20Tobias%20Ivan%20ES.pdf", download: "Tofalo_Tobias_Ivan_ES.pdf" },
+//   en: { href: "/Tofalo,%20Tobias%20Ivan%20EN.pdf", download: "Tofalo_Tobias_Ivan_EN.pdf" },
+// };
 
 const SocialIcons = () => {
-  const { t, lang } = useLang();
-  const cv = cvFiles[lang];
 
   useEffect(() => {
     const social = document.getElementById("social") as HTMLElement;
@@ -78,12 +76,12 @@ const SocialIcons = () => {
           </a>
         </span>
       </div>
-      <a className="resume-button" href={cv.href} download={cv.download}>
+      {/* <a className="resume-button" href={cv.href} download={cv.download}>
         <HoverLinks text={t.cv} />
         <span>
           <TbNotes />
         </span>
-      </a>
+      </a> */}
     </div>
   );
 };

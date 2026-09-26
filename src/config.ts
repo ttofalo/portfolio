@@ -4,6 +4,7 @@ import invictusImg from "./assets/invictus.png";
 import boyerosImg from "./assets/boyeros.png";
 import desarrolladoraImg from "./assets/desarrolladora.png";
 import bevalueImg from "./assets/bevalue_landing.png";
+import bionteImg from "./assets/bionte.png";
 
 export const config = {
     developer: {
@@ -113,6 +114,15 @@ export const config = {
             image: examenImg,
             description: "Aplicación interactiva para la práctica y simulación de exámenes náuticos, facilitando el aprendizaje de los estudiantes.",
             link: "https://examennauticocba111.vercel.app/"
+        },
+        {
+            id: 7,
+            title: "Bionte",
+            category: "Accessibility / Full Stack & Mobile",
+            technologies: "Expo, React Native Web, TypeScript, Node.js, Express, PostgreSQL, Konva",
+            image: bionteImg,
+            description: "Sistema de navegación indoor asistida por voz, pensado para personas con discapacidad visual.",
+            link: "https://www.bionte.com.ar"
         }
     ],
     contact: {

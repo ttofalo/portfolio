@@ -108,6 +108,10 @@ const es = {
         description:
           "Aplicación interactiva para la práctica y simulación de exámenes náuticos, facilitando el aprendizaje de los estudiantes.",
       },
+      {
+        description:
+          "Sistema de navegación indoor asistida por voz, pensado para personas con discapacidad visual. Posiciona al usuario sin GPS fusionando acelerómetro, giroscopio y brújula del teléfono (dead reckoning con detección de pasos), y se recalibra leyendo códigos QR distribuidos en el edificio. Incluye una PWA con guiado por voz y rutas calculadas con A*, un editor web de planos vectoriales y una API REST con base de datos en la nube.",
+      },
     ],
   },
   contact: {
@@ -245,6 +249,10 @@ const en: typeof es = {
       {
         description:
           "Interactive application for practicing and simulating nautical exams, facilitating student learning.",
+      },
+      {
+        description:
+          "Voice-guided indoor navigation system designed for people with visual impairment. It locates the user without GPS by fusing the phone's accelerometer, gyroscope and compass (dead reckoning with step detection), and recalibrates by scanning QR codes placed across the building. Includes a PWA with voice guidance and A* routing, a web-based vector map editor, and a REST API with a cloud database.",
       },
     ],
   },

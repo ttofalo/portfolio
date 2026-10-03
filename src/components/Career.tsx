@@ -15,7 +15,7 @@ const Career = () => {
             <div className="career-dot"></div>
           </div>
           {t.career.experiences.map((exp, index) => (
-            <div key={index} className={`career-info-box ${index === 0 || index === 3 ? 'career-education' : 'career-work'}`}>
+            <div key={index} className={`career-info-box ${exp.type === "education" ? "career-education" : "career-work"}`}>
               <div className="career-info-in">
                 <div className="career-role">
                   <h4>{exp.position}</h4>

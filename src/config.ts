@@ -20,10 +20,18 @@ export const config = {
     },
     about: {
         title: "Sobre Mí",
-        description: "Egresado en Desarrollo de Software, con experiencia en soluciones web y mobile usando React, JavaScript, TypeScript y Java. Actualmente trabajo como Developer, participando en el desarrollo de sistemas internos, integración de APIs REST y construcción de interfaces mantenibles y de calidad.",
-        description2: "Tengo experiencia en entornos corporativos y trabajo en equipo bajo metodología Scrum, con foco en la calidad del software y la experiencia de usuario. Actualmente curso la Licenciatura en Ciencia de Datos, aportando una mirada analítica orientada a soluciones basadas en datos."
+        description: "Software Engineer egresado en Desarrollo de Software. Me enfoco en el backend que sostiene la confiabilidad de un producto a escala y bajo datos reales: data-quality, fraud detection, KYC e infraestructura de comunicaciones por encima de la feature aislada. Hoy en Silencio Network, una plataforma global de Voice AI con +1M de usuarios que recolecta y valida datos de voz para entrenar modelos de IA, sobre un stack serverless en AWS, con Node.js, Python, React, TypeScript y PostgreSQL.",
+        description2: "Mi experiencia previa cubre la construcción de sistemas internos desde cero y la administración de infraestructura corporativa como Active Directory, SharePoint, ERP y VPNs. Esa base me da una visión concreta de cómo el software se encuentra con la operación real de una empresa.",
+        description3: "Cursando la Licenciatura en Ciencia de Datos en la Universidad del Gran Rosario, sumando una mirada analítica al perfil técnico."
     },
     experiences: [
+        {
+            position: "Software Engineer",
+            company: "Silencio Network",
+            period: "Sept 2026 - Actualidad",
+            type: "work",
+            description: "Desarrollo de features end to end para una plataforma global de Voice AI con +1M de usuarios que recolecta y valida datos de voz para entrenar modelos de IA. Participación en KYC, fraud detection, data-quality, Mail Communications sobre AWS SES y herramientas internas de operación y analytics. Stack: AWS, Node.js, Python, React, PostgreSQL."
+        },
         {
             position: "Licenciatura en Ciencia de Datos",
             company: "Universidad del Gran Rosario",
@@ -34,7 +42,7 @@ export const config = {
         {
             position: "FrontEnd Developer",
             company: "Porta Hnos. S.A.",
-            period: "Sept 2025 - Actualidad",
+            period: "Sept 2025 - Sept 2026",
             type: "work",
             description: "Desarrollo de sistemas internos con ReactJS, MaterialUI y ChakraUI. Integración de APIs REST."
         },
@@ -142,5 +150,3 @@ export const config = {
         }
     }
 };
-
-

@@ -18,9 +18,11 @@ const es = {
   about: {
     title: "Sobre Mí",
     description:
-      "Egresado en Desarrollo de Software, con experiencia en soluciones web y mobile usando React, JavaScript, TypeScript y Java. Actualmente trabajo como Developer, participando en el desarrollo de sistemas internos, integración de APIs REST y construcción de interfaces mantenibles y de calidad.",
+      "Software Engineer egresado en Desarrollo de Software. Me enfoco en el backend que sostiene la confiabilidad de un producto a escala y bajo datos reales: data-quality, fraud detection, KYC e infraestructura de comunicaciones por encima de la feature aislada. Hoy en Silencio Network, una plataforma global de Voice AI con +1M de usuarios que recolecta y valida datos de voz para entrenar modelos de IA, sobre un stack serverless en AWS, con Node.js, Python, React, TypeScript y PostgreSQL.",
     description2:
-      "Tengo experiencia en entornos corporativos y trabajo en equipo bajo metodología Scrum, con foco en la calidad del software y la experiencia de usuario. Actualmente curso la Licenciatura en Ciencia de Datos, aportando una mirada analítica orientada a soluciones basadas en datos.",
+      "Mi experiencia previa cubre la construcción de sistemas internos desde cero y la administración de infraestructura corporativa como Active Directory, SharePoint, ERP y VPNs. Esa base me da una visión concreta de cómo el software se encuentra con la operación real de una empresa.",
+    description3:
+      "Cursando la Licenciatura en Ciencia de Datos en la Universidad del Gran Rosario, sumando una mirada analítica al perfil técnico.",
   },
   whatIDo: {
     title1: "QUÉ",
@@ -38,16 +40,26 @@ const es = {
     title2: "experiencia",
     experiences: [
       {
+        position: "Software Engineer",
+        company: "Silencio Network",
+        period: "Sept 2026 - Actualidad",
+        type: "work",
+        description:
+          "Desarrollo de features end to end para una plataforma global de Voice AI con +1M de usuarios que recolecta y valida datos de voz para entrenar modelos de IA. Participación en el flujo de KYC, reglas de retiro por país, mecanismos de fraud detection y data-quality, y el sistema de Mail Communications sobre AWS SES. Desarrollo de herramientas internas de operación y analytics, localización del producto y decisiones de arquitectura, performance y reliability en un entorno serverless. Stack: AWS, Node.js, Python, React, PostgreSQL.",
+      },
+      {
         position: "Licenciatura en Ciencia de Datos",
         company: "Universidad del Gran Rosario",
         period: "Dic 2025 - Actualidad",
+        type: "education",
         description:
           "Formación en análisis de datos, machine learning y técnicas de procesamiento de información.",
       },
       {
         position: "FrontEnd Developer",
         company: "Porta Hnos. S.A.",
-        period: "Sept 2025 - Actualidad",
+        period: "Sept 2025 - Sept 2026",
+        type: "work",
         description:
           "Desarrollo de sistemas internos con ReactJS, MaterialUI y ChakraUI. Integración de APIs REST.",
       },
@@ -55,6 +67,7 @@ const es = {
         position: "Asistente IT",
         company: "Porta Hnos. S.A.",
         period: "Jun 2025 - Sept 2025",
+        type: "work",
         description:
           "Soporte de hardware, gestión de herramientas como WinCC, SharePoint, WMS y Active Directory.",
       },
@@ -62,6 +75,7 @@ const es = {
         position: "Tecnicatura Desarrollo de Software",
         company: "Instituto Superior Santo Domingo",
         period: "Feb 2023 - Dic 2025",
+        type: "education",
         description:
           "Formación en programación, bases de datos, redes y desarrollo web/móvil con metodologías ágiles.",
       },
@@ -69,6 +83,7 @@ const es = {
         position: "Analista de Infraestructura",
         company: "Nutefusion Ltd.",
         period: "Sept 2023 - Mar 2024",
+        type: "work",
         description:
           "Configuración de VPNs, mantenimiento de hardware y soporte remoto en entornos corporativos.",
       },
@@ -160,9 +175,11 @@ const en: typeof es = {
   about: {
     title: "About Me",
     description:
-      "Software Development graduate with experience in web and mobile solutions using React, JavaScript, TypeScript, and Java. Currently working as a Developer, building internal systems, integrating REST APIs, and creating maintainable, high-quality interfaces.",
+      "Software Engineer and Software Development graduate. I focus on the backend that supports product reliability at scale and with real-world data: data quality, fraud detection, KYC, and communications infrastructure beyond the isolated feature. Today at Silencio Network, a global Voice AI platform with 1M+ users that collects and validates voice data to train AI models, built on a serverless AWS stack with Node.js, Python, React, TypeScript, and PostgreSQL.",
     description2:
-      "Experienced in corporate environments and teamwork following Scrum methodology, with a focus on software quality and user experience. Currently pursuing a degree in Data Science, bringing an analytical perspective oriented towards data-driven solutions.",
+      "My previous experience includes building internal systems from scratch and managing corporate infrastructure such as Active Directory, SharePoint, ERP systems, and VPNs. This background gives me a practical view of how software meets real business operations.",
+    description3:
+      "Currently pursuing a Bachelor's degree in Data Science at Universidad del Gran Rosario, adding an analytical perspective to my technical profile.",
   },
   whatIDo: {
     title1: "WHAT",
@@ -180,16 +197,26 @@ const en: typeof es = {
     title2: "experience",
     experiences: [
       {
+        position: "Software Engineer",
+        company: "Silencio Network",
+        period: "Sept 2026 - Present",
+        type: "work",
+        description:
+          "End-to-end feature development for a global Voice AI platform with 1M+ users that collects and validates voice data to train AI models. Contributing to KYC flows, country-specific withdrawal rules, fraud detection and data quality mechanisms, and the Mail Communications system built on AWS SES. Building internal operations and analytics tools, localizing the product, and contributing to architecture, performance, and reliability decisions in a serverless environment. Stack: AWS, Node.js, Python, React, PostgreSQL.",
+      },
+      {
         position: "Bachelor's in Data Science",
         company: "Universidad del Gran Rosario",
         period: "Dec 2025 - Present",
+        type: "education",
         description:
           "Training in data analysis, machine learning, and information processing techniques.",
       },
       {
         position: "FrontEnd Developer",
         company: "Porta Hnos. S.A.",
-        period: "Sept 2025 - Present",
+        period: "Sept 2025 - Sept 2026",
+        type: "work",
         description:
           "Development of internal systems with ReactJS, MaterialUI, and ChakraUI. REST API integration.",
       },
@@ -197,6 +224,7 @@ const en: typeof es = {
         position: "IT Assistant",
         company: "Porta Hnos. S.A.",
         period: "Jun 2025 - Sept 2025",
+        type: "work",
         description:
           "Hardware support, management of tools such as WinCC, SharePoint, WMS, and Active Directory.",
       },
@@ -204,6 +232,7 @@ const en: typeof es = {
         position: "Software Development Degree",
         company: "Instituto Superior Santo Domingo",
         period: "Feb 2023 - Dec 2025",
+        type: "education",
         description:
           "Training in programming, databases, networking, and web/mobile development with agile methodologies.",
       },
@@ -211,6 +240,7 @@ const en: typeof es = {
         position: "Infrastructure Analyst",
         company: "Nutefusion Ltd.",
         period: "Sept 2023 - Mar 2024",
+        type: "work",
         description:
           "VPN configuration, hardware maintenance, and remote support in corporate environments.",
       },

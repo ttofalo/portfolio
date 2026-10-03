@@ -14,6 +14,9 @@ const About = () => {
           <p className="para">
             {t.about.description2}
           </p>
+          <p className="para">
+            {t.about.description3}
+          </p>
         </div>
       </div>
     </div>

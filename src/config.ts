@@ -10,8 +10,8 @@ export const config = {
     developer: {
         name: "Tobias",
         fullName: "Tobias Tofalo",
-        title: "Desarrollador Full-Stack",
-        description: "Desarrollador Full-Stack apasionado por crear aplicaciones web modernas, sistemas inteligentes y soluciones digitales innovadoras."
+        title: "Software Engineer",
+        description: "Software Engineer apasionado por crear aplicaciones web modernas, sistemas inteligentes y soluciones digitales innovadoras."
     },
     social: {
         github: "ttofalo",

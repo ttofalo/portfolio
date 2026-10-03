@@ -12,8 +12,8 @@ const es = {
   },
   landing: {
     greeting: "Soy",
-    role1: "FullStack",
-    role2: "Developer",
+    role1: "Software",
+    role2: "Engineer",
   },
   about: {
     title: "Sobre Mí",
@@ -150,9 +150,9 @@ const es = {
     visit: "Visitar",
   },
   developer: {
-    title: "Desarrollador Full-Stack",
+    title: "Software Engineer",
     description:
-      "Desarrollador Full-Stack apasionado por crear aplicaciones web modernas, sistemas inteligentes y soluciones digitales innovadoras.",
+      "Software Engineer apasionado por crear aplicaciones web modernas, sistemas inteligentes y soluciones digitales innovadoras.",
   },
   cv: "CURRICULUM",
 };
@@ -169,8 +169,8 @@ const en: typeof es = {
   },
   landing: {
     greeting: "I'm",
-    role1: "FullStack",
-    role2: "Developer",
+    role1: "Software",
+    role2: "Engineer",
   },
   about: {
     title: "About Me",
@@ -307,9 +307,9 @@ const en: typeof es = {
     visit: "Visit",
   },
   developer: {
-    title: "Full-Stack Developer",
+    title: "Software Engineer",
     description:
-      "Full-Stack Developer passionate about building modern web applications, intelligent systems, and innovative digital solutions.",
+      "Software Engineer passionate about building modern web applications, intelligent systems, and innovative digital solutions.",
   },
   cv: "RESUME",
 };
